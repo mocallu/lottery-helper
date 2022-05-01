@@ -1,0 +1,23 @@
+{
+  "name": "loteria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jest",
+    "lint": "./node_modules/.bin/eslint ./ --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest": "^26.1.5",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^28.0.3",
+    "prettier": "^2.6.2"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
