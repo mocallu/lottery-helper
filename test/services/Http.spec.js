@@ -5,35 +5,33 @@ describe('Http Service', () => {
     baseUrl: 'https://reqres.in',
   });
 
-  it('Needs to return an error on invalid get url', () => {
-    const promise = Http.get('https://invalid-path').catch((e) => {
-      // eslint-disable-next-line jest/no-conditional-expect
-      expect(e).toBeDefined();
-    });
-    return promise;
+  it('Deve retornar erro ao fazer uma request GET com url invalida', async () => {
+    let res = null;
+    try {
+      await Http.get('https://invalid-url');
+    } catch (e) {
+      res = e;
+    }
+    expect(res).toBeDefined();
   });
 
-  it('Needs to return an error on invalid get path', () => {
-    const promise = Http.get('/invalid-path').catch((e) => {
-      // eslint-disable-next-line jest/no-conditional-expect
-      expect(e).toBeDefined();
-    });
-    return promise;
+  it('Deve retornar erro 404 ao tentar processar via GET um endpoint invalido', async () => {
+    const promise = await Http.get('/invalid-path');
+    expect(promise.statusCode).toBe(404);
   });
 
-  it('Needs to return an error on invalid post url', () => {
-    const promise = Http.post('/invalid-path').catch((e) => {
-      // eslint-disable-next-line jest/no-conditional-expect
-      expect(e).toBeDefined();
-    });
-    return promise;
+  it('Deve retornar erro 404 ao tentar processar via POST um endpoint invalido', async () => {
+    const promise = await Http.post('/invalid-path');
+    expect(promise.statusCode).toBe(404);
   });
 
-  it('Needs to return an error on invalid post path', () => {
-    const promise = Http.post('https://invalid-path').catch((e) => {
-      // eslint-disable-next-line jest/no-conditional-expect
-      expect(e).toBeDefined();
-    });
-    return promise;
+  it('Deve retornar erro ao fazer uma request POST com url invalida', async () => {
+    let res = null;
+    try {
+      await Http.post('https://invalid-url');
+    } catch (e) {
+      res = e;
+    }
+    expect(res).toBeDefined();
   });
 });

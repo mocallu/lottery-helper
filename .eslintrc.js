@@ -13,6 +13,11 @@ module.exports = {
   ],
   parserOptions: {
     parser: '@babel/eslint-parser',
+    ecmaVersion: 8,
+    ecmaFeatures: {
+      globalReturn: true,
+      experimentalObjectRestSpread: true,
+    },
   },
   rules: {
     'max-len': ['error', { code: 120 }],

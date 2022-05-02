@@ -1,6 +1,10 @@
 const Request = require('request');
 
 class Http {
+  /**
+   * Constructor
+   * @param {Object} params
+   */
   constructor(params) {
     this.request = Request;
     this.config = {
@@ -12,6 +16,11 @@ class Http {
     };
   }
 
+  /**
+   * Get
+   * @param {String} path
+   * @returns Promise
+   */
   get(path) {
     return new Promise((resolve, reject) => {
       this.request.get(path, this.config, (error, response) => {
@@ -23,6 +32,12 @@ class Http {
     });
   }
 
+  /**
+   * Post
+   * @param {String} path
+   * @param {Object} data
+   * @returns Promise
+   */
   post(path, data) {
     return new Promise((resolve, reject) => {
       this.request
