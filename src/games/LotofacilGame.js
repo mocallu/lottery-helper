@@ -37,10 +37,10 @@ class LotofacilGame extends AbstractGame {
   areGoodSequencies(bet) {
     const sequencyExtractor = new SequencyExtractor(bet);
     const sequencies = sequencyExtractor.process().getResult();
-    if (sequencies.length < 5) {
-      return false;
+    if (sequencies.length < 8 && sequencies.length > 3) {
+      return true;
     }
-    return true;
+    return false;
   }
 
   /**

@@ -21,7 +21,6 @@ describe('Lotofacil Game', () => {
 
   it('Deve gerar uma nova aposta', () => {
     const bet = game.createBet();
-    console.log(bet);
     expect(bet).toHaveLength(game.betLength);
   });
 });
