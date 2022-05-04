@@ -31,7 +31,10 @@ class SequencyExtractor extends AbstractExtractor {
       if (!value) {
         return;
       }
-      ret.push(value.split(',').map((n) => parseInt(n)));
+      const upgrade = value.split(',').map((n) => parseInt(n));
+      if (upgrade.length > 1) {
+        ret.push(upgrade);
+      }
     });
     return ret;
   }

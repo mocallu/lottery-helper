@@ -11,7 +11,7 @@ class AbstractAnalizer {
    * @param {Number} number Número a ser verificado
    * @returns Number
    */
-  howManyTimesANumberAppear(bets, number) {
+  howManyTimesANumberAppears(bets, number) {
     let total = 0;
     bets.forEach((bet) => {
       if (bet.filter((n) => n === number).shift()) {
@@ -35,7 +35,15 @@ class AbstractAnalizer {
       const sequencies = sequencExtractor.setBet(bet).process().getResult();
       if (
         sequencies
-          .filter((seq) => seq.toString() === sequency.toString())
+          .filter((seq) => {
+            if (seq.toString() === sequency.toString()) {
+              return true;
+            }
+            const regex = new RegExp(`${sequency.toString()}`);
+            if (regex.test(seq.toString())) {
+              return true;
+            }
+          })
           .shift()
       ) {
         total += 1;
