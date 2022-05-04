@@ -2,7 +2,7 @@ const Http = require('./Http');
 const Config = require('../Config');
 
 /**
- * @class Loteria
+ * @class
  */
 class Loteria {
   /**

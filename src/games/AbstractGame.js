@@ -1,3 +1,6 @@
+/**
+ * @class
+ */
 class AbstractGame {
   constructor() {
     this.blackList = [];
@@ -5,6 +8,7 @@ class AbstractGame {
 
   /**
    * Seta Black List
+   * @abstract
    * @param {Array} blackList Array com itens na blacklist
    * @returns self
    */
@@ -15,6 +19,7 @@ class AbstractGame {
 
   /**
    * Adiciona item na array de blacklist
+   * @abstract
    * @param {String} item Blacklist item
    */
   addItemOnBlacklist(item) {
@@ -23,6 +28,7 @@ class AbstractGame {
 
   /**
    * Verifica se o item está no array de black list
+   * @abstract
    * @param {String | Number} item Black list item key
    * @returns Boolean
    */

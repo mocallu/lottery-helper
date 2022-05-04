@@ -1,5 +1,9 @@
 const HttpService = require('@/services/Http');
 
+jest.mock('request', () => {
+  return require('../mocks/Request');
+});
+
 describe('Http Service', () => {
   const Http = new HttpService({
     baseUrl: 'https://reqres.in',

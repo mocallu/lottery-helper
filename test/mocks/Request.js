@@ -1,12 +1,13 @@
 module.exports = {
-  get: (path) => {
+  get: (path, conf, cb) => {
     if ('/invalid-path' === path) {
-      return Promise.resolve({
+      cb(null, {
         statusCode: 404,
       });
     }
     if ('https://invalid-url' === path) {
-      return Promise.reject('invalid_url');
+      cb('invalid_url', null);
+      return;
     }
     return Promise.resolve({
       statusCode: 200,
@@ -17,17 +18,20 @@ module.exports = {
       ],
     });
   },
-  post: (path) => {
+  post: (path, conf, cb) => {
     if ('/invalid-path' === path) {
-      return Promise.resolve({
+      cb(null, {
         statusCode: 404,
       });
+      return;
     }
     if ('https://invalid-url' === path) {
-      return Promise.reject('invalid_url');
+      cb('invalid_url', null);
+      return;
     }
-    return Promise.resolve({
+    cb(null, {
       statusCode: 200,
     });
+    return;
   },
 };

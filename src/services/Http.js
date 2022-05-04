@@ -1,5 +1,8 @@
 const Request = require('request');
 
+/**
+ * @class
+ */
 class Http {
   /**
    * Constructor

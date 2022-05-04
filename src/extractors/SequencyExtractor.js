@@ -1,16 +1,12 @@
 const AbstractExtractor = require('./AbstractExtractor');
 
 /**
- * @class SequencyExtractor
+ * @class
  * @extends AbstractExtractor
  */
 class SequencyExtractor extends AbstractExtractor {
-  /**
-   * Constructor
-   * @param {Array} value Valor usado no extrator
-   */
-  constructor(value) {
-    super(value);
+  constructor() {
+    super();
     this.result = [];
   }
 
@@ -45,7 +41,7 @@ class SequencyExtractor extends AbstractExtractor {
    * @returns self
    */
   process() {
-    this.result = this.getSequencies(this.value);
+    this.result = this.getSequencies(this.bet);
     return super.process();
   }
 }

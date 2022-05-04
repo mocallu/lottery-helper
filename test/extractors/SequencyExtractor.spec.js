@@ -7,10 +7,11 @@ describe('Sequency Extractor', () => {
       [4, 5, 6],
       [8, 9, 10, 11, 12],
     ];
-    const ex = new SequencyExtractor(
-      [].concat(sequencies[0], sequencies[1], sequencies[2])
-    );
-    const res = ex.process().getResult();
+    const ex = new SequencyExtractor();
+    const res = ex
+      .setBet([].concat(sequencies[0], sequencies[1], sequencies[2]))
+      .process()
+      .getResult();
     expect(res).toHaveLength(3);
     expect(res[0]).toHaveLength(sequencies[0].length);
     expect(res[1]).toHaveLength(sequencies[1].length);

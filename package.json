@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/jest",
+    "app": "node index.js",
+    "test": "./node_modules/.bin/jest --detectOpenHandles",
     "lint": "./node_modules/.bin/eslint ./src --fix",
     "doc": "jsdoc -c jsdoc.config.js"
   },

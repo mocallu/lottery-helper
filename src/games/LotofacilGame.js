@@ -1,8 +1,9 @@
 const AbstractGame = require('./AbstractGame');
-const SequencyExtractor = require('@/extractors/SequencyExtractor');
+const SequencyExtractor = require('../extractors/SequencyExtractor');
 
 /**
  * @class
+ * @extends AbstractGame
  */
 class LotofacilGame extends AbstractGame {
   constructor() {
@@ -17,6 +18,10 @@ class LotofacilGame extends AbstractGame {
   /**
    * Verifica se a aposta é um bom jogo
    * @param {Array} bet Jogo
+   * @example
+   * const bet = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+   * lotofacilGame.isAGoodGame(bet);
+   * // returns false
    * @returns Boolean
    */
   isAGoodGame(bet) {
@@ -31,12 +36,16 @@ class LotofacilGame extends AbstractGame {
 
   /**
    * Verifica se sequencias da aposta são boas
+   * @example
+   * const bet = [1, 2, 4, 5, 7, 8, 10, 12, 13, 15, 16, 18, 19, 21, 22];
+   * lotofacilGame.areGoodSequencies(bet);
+   * // returns false
    * @param {Array} bet Aposta
    * @returns Boolean
    */
   areGoodSequencies(bet) {
-    const sequencyExtractor = new SequencyExtractor(bet);
-    const sequencies = sequencyExtractor.process().getResult();
+    const sequencyExtractor = new SequencyExtractor();
+    const sequencies = sequencyExtractor.setBet(bet).process().getResult();
     if (sequencies.length < 8 && sequencies.length > 3) {
       return true;
     }
@@ -66,6 +75,9 @@ class LotofacilGame extends AbstractGame {
 
   /**
    * Cria uma aposta
+   * @example
+   * lotofacilGame.createBet();
+   * // returns [1, 3, 6, 7, 8, 9, 11, 13, 14, 15, 18, 19, 22, 24, 25]
    * @returns Array
    */
   createBet() {

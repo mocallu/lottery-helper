@@ -1,18 +1,29 @@
 /**
- * @class AbstractExtractor
+ * @class
  */
 class AbstractExtractor {
   /**
    * Constructor
-   * @param {String | Array | Object} value Valor usado para extração
+   * @param {String | Array | Object} bet Valor usado para extração
    */
-  constructor(value) {
-    this.value = value;
+  constructor() {
     this.result = '';
   }
 
   /**
+   * Seta o valor da propriedade bet
+   * @abstract
+   * @param {Array} bet Array com numeros da aposta
+   * @returns self
+   */
+  setBet(bet) {
+    this.bet = bet;
+    return this;
+  }
+
+  /**
    * Process
+   * @abstract
    * @returns self
    */
   process() {
@@ -21,6 +32,7 @@ class AbstractExtractor {
 
   /**
    * Get Result
+   * @abstract
    * @returns String
    */
   getResult() {

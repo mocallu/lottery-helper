@@ -1,8 +1,9 @@
 const LotofacilGame = require('@/games/LotofacilGame');
+const lotofacilBets = require('../data/lotofacil-bets.json');
 
 describe('Lotofacil Game', () => {
   const game = new LotofacilGame();
-  game.setBlackList([]);
+  game.setBlackList(lotofacilBets);
   game.addItemOnBlacklist(
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16].toString()
   );
