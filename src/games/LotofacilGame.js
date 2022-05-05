@@ -46,7 +46,7 @@ class LotofacilGame extends AbstractGame {
    * Verifica se a aposta possui os numeros requeridos
    * @param {Array} bet Aposta
    * @param {Array} requiredNumbers Numeros requeridos
-   * @returns Bollean
+   * @returns Boolean
    */
   isRequiredNumberPresent(bet, requiredNumbers = []) {
     if (requiredNumbers.length === 0) {
