@@ -28,10 +28,9 @@ describe('LotofacilAnalyzer', () => {
     expect(res).toBe(0);
   });
 
-  it('Deve retornar a analize das apoastas', () => {
+  it('Deve retornar a analize das apostas', () => {
     const res = lotofacilAnalyzer.getResume(bets);
     expect(res.winningNumbers).toHaveLength(25);
-    expect(res.winningSequencies['1,2,3']).toBe(3);
-    expect(res.winningSequencies['14,15']).toBe(2);
+    expect(res.winningSequencies).toHaveLength(6);
   });
 });

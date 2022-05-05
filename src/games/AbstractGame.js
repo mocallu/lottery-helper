@@ -4,6 +4,7 @@
 class AbstractGame {
   constructor() {
     this.blackList = [];
+    this.rules = {};
   }
 
   /**
@@ -14,6 +15,17 @@ class AbstractGame {
    */
   setBlackList(blackList) {
     this.blackList = blackList;
+    return this;
+  }
+
+  /**
+   * Seta as regras da aposta
+   * @abstract
+   * @param {Object} rules Regras da aposta
+   * @returns self
+   */
+  setRules(rules) {
+    this.rules = rules;
     return this;
   }
 

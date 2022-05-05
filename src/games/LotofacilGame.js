@@ -13,6 +13,9 @@ class LotofacilGame extends AbstractGame {
       22, 23, 24, 25,
     ];
     this.betLength = 15;
+    this.rules.sequencyMaxSize = 5;
+    this.rules.requiredSequencies = [];
+    this.rules.requiredNumbers = [];
   }
 
   /**
@@ -27,11 +30,36 @@ class LotofacilGame extends AbstractGame {
   isAGoodGame(bet) {
     if (
       !super.isItemOnBlackList(bet.toString()) &&
-      this.areGoodSequencies(bet)
+      this.areGoodSequencies(
+        bet,
+        this.rules.requiredSequencies,
+        this.rules.sequencyMaxSize
+      ) &&
+      this.isRequiredNumberPresent(bet, this.rules.requiredNumbers)
     ) {
       return true;
     }
     return false;
+  }
+
+  /**
+   * Verifica se a aposta possui os numeros requeridos
+   * @param {Array} bet Aposta
+   * @param {Array} requiredNumbers Numeros requeridos
+   * @returns Bollean
+   */
+  isRequiredNumberPresent(bet, requiredNumbers = []) {
+    if (requiredNumbers.length === 0) {
+      return true;
+    }
+    let isPresent = false;
+    bet.forEach((number) => {
+      if (requiredNumbers.includes(number)) {
+        isPresent = true;
+      }
+    });
+
+    return isPresent;
   }
 
   /**
@@ -43,13 +71,32 @@ class LotofacilGame extends AbstractGame {
    * @param {Array} bet Aposta
    * @returns Boolean
    */
-  areGoodSequencies(bet) {
+  areGoodSequencies(bet, requiredSequencies = [], sequencyMaxSize = []) {
+    let areGoodSequencies = true;
     const sequencyExtractor = new SequencyExtractor();
     const sequencies = sequencyExtractor.setBet(bet).process().getResult();
-    if (sequencies.length < 8 && sequencies.length > 3) {
-      return true;
+
+    // Verifica tamanho maximo da sequencia
+    if (sequencies.filter((seq) => seq.length > sequencyMaxSize).shift()) {
+      areGoodSequencies = false;
     }
-    return false;
+
+    // Verifica se existe ao menos uma sequencia requerida
+    if (requiredSequencies.length > 0) {
+      let haveRequiredSequency = false;
+      const requiredSeqs = requiredSequencies.map((seq) => seq.toString());
+      sequencies.forEach((s) => {
+        const seq = s.toString();
+        if (requiredSeqs.includes(seq)) {
+          haveRequiredSequency = true;
+        }
+      });
+      if (!haveRequiredSequency) {
+        areGoodSequencies = false;
+      }
+    }
+
+    return areGoodSequencies;
   }
 
   /**
@@ -67,10 +114,7 @@ class LotofacilGame extends AbstractGame {
       }
     }
     ticket.sort((a, b) => a - b);
-    if (!this.isAGoodGame(ticket)) {
-      return ticket;
-    }
-    return this.generateRandomBet(this.ticket);
+    return ticket;
   }
 
   /**
@@ -81,7 +125,15 @@ class LotofacilGame extends AbstractGame {
    * @returns Array
    */
   createBet() {
-    return this.generateRandomBet(this.ticket);
+    let badGame = true;
+    let bet = [];
+    while (badGame) {
+      bet = this.generateRandomBet(this.ticket);
+      if (this.isAGoodGame(bet)) {
+        badGame = false;
+      }
+    }
+    return bet;
   }
 }
 
