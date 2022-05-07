@@ -33,4 +33,12 @@ describe('LotofacilAnalyzer', () => {
     expect(res.winningNumbers).toHaveLength(25);
     expect(res.winningSequencies).toHaveLength(6);
   });
+
+  it('Deve retornar a quantidade de numeros pares e impares', () => {
+    const an = new LotofacilAnalizer();
+    const res = an.getNumericalSet([
+      [2, 3, 4, 6, 7, 9, 11, 12, 16, 17, 19, 20, 21, 23, 24],
+    ]);
+    expect(res['even:8-odds:7']).toBe(1);
+  });
 });

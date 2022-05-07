@@ -35,8 +35,8 @@ describe('Lotofacil Game', () => {
       requiredNumbers: [20],
       requiredSequencies: [[1, 2, 3]],
     });
-    const bet = game.createBet();
-    expect(bet.filter((i) => i === 20).shift()).toBeTruthy();
-    expect(bet).toHaveLength(game.betLength);
+    const res = game.createBet();
+    expect(res.bet.filter((i) => i === 20).shift()).toBeTruthy();
+    expect(res.bet).toHaveLength(game.betLength);
   });
 });

@@ -52,14 +52,8 @@ class LotofacilGame extends AbstractGame {
     if (requiredNumbers.length === 0) {
       return true;
     }
-    let isPresent = false;
-    bet.forEach((number) => {
-      if (requiredNumbers.includes(number)) {
-        isPresent = true;
-      }
-    });
-
-    return isPresent;
+    const numbers = bet.filter((number) => requiredNumbers.includes(number));
+    return numbers.length === requiredNumbers.length;
   }
 
   /**
@@ -121,19 +115,24 @@ class LotofacilGame extends AbstractGame {
    * Cria uma aposta
    * @example
    * lotofacilGame.createBet();
-   * // returns [1, 3, 6, 7, 8, 9, 11, 13, 14, 15, 18, 19, 22, 24, 25]
-   * @returns Array
+   * // returns {bet: [1, 3, 6, 7, 8, 9, 11, 13, 14, 15, 18, 19, 22, 24, 25], try: 100}
+   * @returns Object
    */
   createBet() {
     let badGame = true;
     let bet = [];
+    let trys = 0;
     while (badGame) {
       bet = this.generateRandomBet(this.ticket);
+      trys += 1;
       if (this.isAGoodGame(bet)) {
         badGame = false;
       }
     }
-    return bet;
+    return {
+      bet,
+      trys,
+    };
   }
 }
 
