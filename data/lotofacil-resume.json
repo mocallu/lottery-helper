@@ -1,1 +1,1268 @@
-{"total":2509,"winningNumbers":[{"number":20,"times":1563},{"number":10,"times":1562},{"number":11,"times":1554},{"number":13,"times":1544},{"number":25,"times":1541},{"number":14,"times":1534},{"number":24,"times":1529},{"number":5,"times":1521},{"number":3,"times":1520},{"number":4,"times":1511},{"number":19,"times":1510},{"number":22,"times":1503},{"number":9,"times":1499},{"number":18,"times":1497},{"number":1,"times":1497},{"number":17,"times":1496},{"number":12,"times":1495},{"number":2,"times":1492},{"number":23,"times":1487},{"number":15,"times":1485},{"number":21,"times":1484},{"number":6,"times":1465},{"number":7,"times":1464},{"number":8,"times":1442},{"number":16,"times":1440}],"winningSequencies":[{"sequency":"1,2","times":1490},{"sequency":"10,11","times":947},{"sequency":"9,10","times":929},{"sequency":"24,25","times":927},{"sequency":"19,20","times":918},{"sequency":"13,14","times":903},{"sequency":"3,4","times":901},{"sequency":"20,21","times":900},{"sequency":"14,15","times":895},{"sequency":"12,13","times":891},{"sequency":"11,12","times":884},{"sequency":"4,5","times":880},{"sequency":"17,18","times":880},{"sequency":"23,24","times":875},{"sequency":"18,19","times":874},{"sequency":"21,22","times":871},{"sequency":"2,3","times":868},{"sequency":"5,6","times":855},{"sequency":"22,23","times":848},{"sequency":"8,9","times":829},{"sequency":"6,7","times":826},{"sequency":"7,8","times":821},{"sequency":"15,16","times":816},{"sequency":"16,17","times":814},{"sequency":"9,10,11","times":541},{"sequency":"10,11,12","times":532},{"sequency":"23,24,25","times":526},{"sequency":"19,20,21","times":521},{"sequency":"8,9,10","times":515},{"sequency":"18,19,20","times":515},{"sequency":"3,4,5","times":511},{"sequency":"2,3,4","times":505},{"sequency":"11,12,13","times":505},{"sequency":"17,18,19","times":504},{"sequency":"12,13,14","times":502},{"sequency":"13,14,15","times":500},{"sequency":"1,2,3","times":493},{"sequency":"20,21,22","times":492},{"sequency":"22,23,24","times":485},{"sequency":"4,5,6","times":480},{"sequency":"14,15,16","times":479},{"sequency":"5,6,7","times":464},{"sequency":"21,22,23","times":462},{"sequency":"7,8,9","times":454},{"sequency":"16,17,18","times":453},{"sequency":"6,7,8","times":445},{"sequency":"15,16,17","times":441},{"sequency":"9,10,11,12","times":304},{"sequency":"10,11,12,13","times":294},{"sequency":"8,9,10,11","times":283},{"sequency":"18,19,20,21","times":281},{"sequency":"17,18,19,20","times":281},{"sequency":"22,23,24,25","times":276},{"sequency":"3,4,5,6","times":274},{"sequency":"2,3,4,5","times":274},{"sequency":"1,2,3,4","times":273},{"sequency":"7,8,9,10","times":270},{"sequency":"12,13,14,15","times":269},{"sequency":"11,12,13,14","times":268},{"sequency":"19,20,21,22","times":265},{"sequency":"16,17,18,19","times":260},{"sequency":"21,22,23,24","times":256},{"sequency":"13,14,15,16","times":256},{"sequency":"20,21,22,23","times":255},{"sequency":"6,7,8,9","times":240},{"sequency":"5,6,7,8","times":239},{"sequency":"15,16,17,18","times":235},{"sequency":"14,15,16,17","times":234},{"sequency":"4,5,6,7","times":233},{"sequency":"9,10,11,12,13","times":167},{"sequency":"10,11,12,13,14","times":156},{"sequency":"8,9,10,11,12","times":153},{"sequency":"17,18,19,20,21","times":148},{"sequency":"7,8,9,10,11","times":145},{"sequency":"2,3,4,5,6","times":142},{"sequency":"1,2,3,4,5","times":140},{"sequency":"11,12,13,14,15","times":138},{"sequency":"18,19,20,21,22","times":136},{"sequency":"16,17,18,19,20","times":135},{"sequency":"21,22,23,24,25","times":133},{"sequency":"6,7,8,9,10","times":132},{"sequency":"12,13,14,15,16","times":132},{"sequency":"19,20,21,22,23","times":128},{"sequency":"13,14,15,16,17","times":127},{"sequency":"3,4,5,6,7","times":127},{"sequency":"15,16,17,18,19","times":126},{"sequency":"20,21,22,23,24","times":122},{"sequency":"5,6,7,8,9","times":117},{"sequency":"4,5,6,7,8","times":116},{"sequency":"14,15,16,17,18","times":112},{"sequency":"9,10,11,12,13,14","times":84},{"sequency":"8,9,10,11,12,13","times":78},{"sequency":"7,8,9,10,11,12","times":74},{"sequency":"1,2,3,4,5,6","times":69},{"sequency":"10,11,12,13,14,15","times":68},{"sequency":"16,17,18,19,20,21","times":67},{"sequency":"3,4,5,6,7,8","times":66},{"sequency":"11,12,13,14,15,16","times":66},{"sequency":"13,14,15,16,17,18","times":65},{"sequency":"20,21,22,23,24,25","times":65},{"sequency":"15,16,17,18,19,20","times":63},{"sequency":"5,6,7,8,9,10","times":62},{"sequency":"18,19,20,21,22,23","times":61},{"sequency":"6,7,8,9,10,11","times":60},{"sequency":"17,18,19,20,21,22","times":60},{"sequency":"14,15,16,17,18,19","times":59},{"sequency":"12,13,14,15,16,17","times":59},{"sequency":"2,3,4,5,6,7","times":58},{"sequency":"4,5,6,7,8,9","times":57},{"sequency":"19,20,21,22,23,24","times":55},{"sequency":"9,10,11,12,13,14,15","times":40},{"sequency":"8,9,10,11,12,13,14","times":39},{"sequency":"6,7,8,9,10,11,12","times":36},{"sequency":"3,4,5,6,7,8,9","times":35},{"sequency":"15,16,17,18,19,20,21","times":32},{"sequency":"10,11,12,13,14,15,16","times":32},{"sequency":"13,14,15,16,17,18,19","times":31},{"sequency":"7,8,9,10,11,12,13","times":31},{"sequency":"2,3,4,5,6,7,8","times":30},{"sequency":"12,13,14,15,16,17,18","times":30},{"sequency":"14,15,16,17,18,19,20","times":29},{"sequency":"19,20,21,22,23,24,25","times":28},{"sequency":"11,12,13,14,15,16,17","times":27},{"sequency":"16,17,18,19,20,21,22","times":26},{"sequency":"17,18,19,20,21,22,23","times":26},{"sequency":"5,6,7,8,9,10,11","times":25},{"sequency":"1,2,3,4,5,6,7","times":25},{"sequency":"4,5,6,7,8,9,10","times":24},{"sequency":"18,19,20,21,22,23,24","times":22},{"sequency":"8,9,10,11,12,13,14,15","times":20},{"sequency":"9,10,11,12,13,14,15,16","times":18},{"sequency":"12,13,14,15,16,17,18,19","times":18},{"sequency":"6,7,8,9,10,11,12,13","times":17},{"sequency":"13,14,15,16,17,18,19,20","times":16},{"sequency":"5,6,7,8,9,10,11,12","times":15},{"sequency":"2,3,4,5,6,7,8,9","times":15},{"sequency":"11,12,13,14,15,16,17,18","times":14},{"sequency":"10,11,12,13,14,15,16,17","times":14},{"sequency":"15,16,17,18,19,20,21,22","times":13},{"sequency":"14,15,16,17,18,19,20,21","times":13},{"sequency":"7,8,9,10,11,12,13,14","times":13},{"sequency":"12,13,14,15,16,17,18,19,20","times":11},{"sequency":"3,4,5,6,7,8,9,10","times":11},{"sequency":"18,19,20,21,22,23,24,25","times":10},{"sequency":"9,10,11,12,13,14,15,16,17","times":9},{"sequency":"16,17,18,19,20,21,22,23","times":9},{"sequency":"4,5,6,7,8,9,10,11","times":9},{"sequency":"1,2,3,4,5,6,7,8","times":9},{"sequency":"11,12,13,14,15,16,17,18,19","times":9},{"sequency":"8,9,10,11,12,13,14,15,16","times":9},{"sequency":"17,18,19,20,21,22,23,24","times":9},{"sequency":"13,14,15,16,17,18,19,20,21","times":6},{"sequency":"11,12,13,14,15,16,17,18,19,20","times":6},{"sequency":"5,6,7,8,9,10,11,12,13","times":6},{"sequency":"15,16,17,18,19,20,21,22,23","times":6},{"sequency":"6,7,8,9,10,11,12,13,14","times":6},{"sequency":"7,8,9,10,11,12,13,14,15","times":6},{"sequency":"1,2,3,4,5,6,7,8,9","times":6},{"sequency":"4,5,6,7,8,9,10,11,12","times":5},{"sequency":"8,9,10,11,12,13,14,15,16,17","times":5},{"sequency":"12,13,14,15,16,17,18,19,20,21","times":5},{"sequency":"2,3,4,5,6,7,8,9,10","times":5},{"sequency":"14,15,16,17,18,19,20,21,22","times":4},{"sequency":"9,10,11,12,13,14,15,16,17,18","times":4},{"sequency":"10,11,12,13,14,15,16,17,18,19","times":4},{"sequency":"3,4,5,6,7,8,9,10,11","times":4},{"sequency":"10,11,12,13,14,15,16,17,18,19,20","times":3},{"sequency":"6,7,8,9,10,11,12,13,14,15","times":3},{"sequency":"17,18,19,20,21,22,23,24,25","times":3},{"sequency":"5,6,7,8,9,10,11,12,13,14","times":3},{"sequency":"4,5,6,7,8,9,10,11,12,13","times":2},{"sequency":"3,4,5,6,7,8,9,10,11,12","times":2},{"sequency":"14,15,16,17,18,19,20,21,22,23","times":2},{"sequency":"7,8,9,10,11,12,13,14,15,16","times":2},{"sequency":"9,10,11,12,13,14,15,16,17,18,19,20","times":2},{"sequency":"1,2,3,4,5,6,7,8,9,10","times":1},{"sequency":"8,9,10,11,12,13,14,15,16,17,18,19,20,21","times":1},{"sequency":"5,6,7,8,9,10,11,12,13,14,15","times":1},{"sequency":"6,7,8,9,10,11,12,13,14,15,16,17","times":1},{"sequency":"12,13,14,15,16,17,18,19,20,21,22","times":1},{"sequency":"16,17,18,19,20,21,22,23,24,25","times":1},{"sequency":"4,5,6,7,8,9,10,11,12,13,14","times":1},{"sequency":"2,3,4,5,6,7,8,9,10,11","times":1},{"sequency":"15,16,17,18,19,20,21,22,23,24","times":1}],"numericalSet":{"even:9-odds:6":526,"even:8-odds:7":783,"even:7-odds:8":638,"even:10-odds:5":176,"even:6-odds:9":280,"even:4-odds:11":9,"even:5-odds:10":68,"even:11-odds:4":26,"even:12-odds:3":3}}
+{
+  "total": 2509,
+  "winningNumbers": [
+    {
+      "number": 20,
+      "times": 1563
+    },
+    {
+      "number": 10,
+      "times": 1562
+    },
+    {
+      "number": 11,
+      "times": 1554
+    },
+    {
+      "number": 13,
+      "times": 1544
+    },
+    {
+      "number": 25,
+      "times": 1541
+    },
+    {
+      "number": 14,
+      "times": 1534
+    },
+    {
+      "number": 24,
+      "times": 1529
+    },
+    {
+      "number": 5,
+      "times": 1521
+    },
+    {
+      "number": 3,
+      "times": 1520
+    },
+    {
+      "number": 4,
+      "times": 1511
+    },
+    {
+      "number": 19,
+      "times": 1510
+    },
+    {
+      "number": 22,
+      "times": 1503
+    },
+    {
+      "number": 9,
+      "times": 1499
+    },
+    {
+      "number": 18,
+      "times": 1497
+    },
+    {
+      "number": 1,
+      "times": 1497
+    },
+    {
+      "number": 17,
+      "times": 1496
+    },
+    {
+      "number": 12,
+      "times": 1495
+    },
+    {
+      "number": 2,
+      "times": 1492
+    },
+    {
+      "number": 23,
+      "times": 1487
+    },
+    {
+      "number": 15,
+      "times": 1485
+    },
+    {
+      "number": 21,
+      "times": 1484
+    },
+    {
+      "number": 6,
+      "times": 1465
+    },
+    {
+      "number": 7,
+      "times": 1464
+    },
+    {
+      "number": 8,
+      "times": 1442
+    },
+    {
+      "number": 16,
+      "times": 1440
+    }
+  ],
+  "winningSequencies": [
+    {
+      "sequency": "1,2",
+      "times": 1490
+    },
+    {
+      "sequency": "10,11",
+      "times": 947
+    },
+    {
+      "sequency": "9,10",
+      "times": 929
+    },
+    {
+      "sequency": "24,25",
+      "times": 927
+    },
+    {
+      "sequency": "19,20",
+      "times": 918
+    },
+    {
+      "sequency": "13,14",
+      "times": 903
+    },
+    {
+      "sequency": "3,4",
+      "times": 901
+    },
+    {
+      "sequency": "20,21",
+      "times": 900
+    },
+    {
+      "sequency": "14,15",
+      "times": 895
+    },
+    {
+      "sequency": "12,13",
+      "times": 891
+    },
+    {
+      "sequency": "11,12",
+      "times": 884
+    },
+    {
+      "sequency": "4,5",
+      "times": 880
+    },
+    {
+      "sequency": "17,18",
+      "times": 880
+    },
+    {
+      "sequency": "23,24",
+      "times": 875
+    },
+    {
+      "sequency": "18,19",
+      "times": 874
+    },
+    {
+      "sequency": "21,22",
+      "times": 871
+    },
+    {
+      "sequency": "2,3",
+      "times": 868
+    },
+    {
+      "sequency": "5,6",
+      "times": 855
+    },
+    {
+      "sequency": "22,23",
+      "times": 848
+    },
+    {
+      "sequency": "8,9",
+      "times": 829
+    },
+    {
+      "sequency": "6,7",
+      "times": 826
+    },
+    {
+      "sequency": "7,8",
+      "times": 821
+    },
+    {
+      "sequency": "15,16",
+      "times": 816
+    },
+    {
+      "sequency": "16,17",
+      "times": 814
+    },
+    {
+      "sequency": "9,10,11",
+      "times": 541
+    },
+    {
+      "sequency": "10,11,12",
+      "times": 532
+    },
+    {
+      "sequency": "23,24,25",
+      "times": 526
+    },
+    {
+      "sequency": "19,20,21",
+      "times": 521
+    },
+    {
+      "sequency": "8,9,10",
+      "times": 515
+    },
+    {
+      "sequency": "18,19,20",
+      "times": 515
+    },
+    {
+      "sequency": "3,4,5",
+      "times": 511
+    },
+    {
+      "sequency": "2,3,4",
+      "times": 505
+    },
+    {
+      "sequency": "11,12,13",
+      "times": 505
+    },
+    {
+      "sequency": "17,18,19",
+      "times": 504
+    },
+    {
+      "sequency": "12,13,14",
+      "times": 502
+    },
+    {
+      "sequency": "13,14,15",
+      "times": 500
+    },
+    {
+      "sequency": "1,2,3",
+      "times": 493
+    },
+    {
+      "sequency": "20,21,22",
+      "times": 492
+    },
+    {
+      "sequency": "22,23,24",
+      "times": 485
+    },
+    {
+      "sequency": "4,5,6",
+      "times": 480
+    },
+    {
+      "sequency": "14,15,16",
+      "times": 479
+    },
+    {
+      "sequency": "5,6,7",
+      "times": 464
+    },
+    {
+      "sequency": "21,22,23",
+      "times": 462
+    },
+    {
+      "sequency": "7,8,9",
+      "times": 454
+    },
+    {
+      "sequency": "16,17,18",
+      "times": 453
+    },
+    {
+      "sequency": "6,7,8",
+      "times": 445
+    },
+    {
+      "sequency": "15,16,17",
+      "times": 441
+    },
+    {
+      "sequency": "9,10,11,12",
+      "times": 304
+    },
+    {
+      "sequency": "10,11,12,13",
+      "times": 294
+    },
+    {
+      "sequency": "8,9,10,11",
+      "times": 283
+    },
+    {
+      "sequency": "18,19,20,21",
+      "times": 281
+    },
+    {
+      "sequency": "17,18,19,20",
+      "times": 281
+    },
+    {
+      "sequency": "22,23,24,25",
+      "times": 276
+    },
+    {
+      "sequency": "3,4,5,6",
+      "times": 274
+    },
+    {
+      "sequency": "2,3,4,5",
+      "times": 274
+    },
+    {
+      "sequency": "1,2,3,4",
+      "times": 273
+    },
+    {
+      "sequency": "7,8,9,10",
+      "times": 270
+    },
+    {
+      "sequency": "12,13,14,15",
+      "times": 269
+    },
+    {
+      "sequency": "11,12,13,14",
+      "times": 268
+    },
+    {
+      "sequency": "19,20,21,22",
+      "times": 265
+    },
+    {
+      "sequency": "16,17,18,19",
+      "times": 260
+    },
+    {
+      "sequency": "21,22,23,24",
+      "times": 256
+    },
+    {
+      "sequency": "13,14,15,16",
+      "times": 256
+    },
+    {
+      "sequency": "20,21,22,23",
+      "times": 255
+    },
+    {
+      "sequency": "6,7,8,9",
+      "times": 240
+    },
+    {
+      "sequency": "5,6,7,8",
+      "times": 239
+    },
+    {
+      "sequency": "15,16,17,18",
+      "times": 235
+    },
+    {
+      "sequency": "14,15,16,17",
+      "times": 234
+    },
+    {
+      "sequency": "4,5,6,7",
+      "times": 233
+    },
+    {
+      "sequency": "9,10,11,12,13",
+      "times": 167
+    },
+    {
+      "sequency": "10,11,12,13,14",
+      "times": 156
+    },
+    {
+      "sequency": "8,9,10,11,12",
+      "times": 153
+    },
+    {
+      "sequency": "17,18,19,20,21",
+      "times": 148
+    },
+    {
+      "sequency": "7,8,9,10,11",
+      "times": 145
+    },
+    {
+      "sequency": "2,3,4,5,6",
+      "times": 142
+    },
+    {
+      "sequency": "1,2,3,4,5",
+      "times": 140
+    },
+    {
+      "sequency": "11,12,13,14,15",
+      "times": 138
+    },
+    {
+      "sequency": "18,19,20,21,22",
+      "times": 136
+    },
+    {
+      "sequency": "16,17,18,19,20",
+      "times": 135
+    },
+    {
+      "sequency": "21,22,23,24,25",
+      "times": 133
+    },
+    {
+      "sequency": "6,7,8,9,10",
+      "times": 132
+    },
+    {
+      "sequency": "12,13,14,15,16",
+      "times": 132
+    },
+    {
+      "sequency": "19,20,21,22,23",
+      "times": 128
+    },
+    {
+      "sequency": "13,14,15,16,17",
+      "times": 127
+    },
+    {
+      "sequency": "3,4,5,6,7",
+      "times": 127
+    },
+    {
+      "sequency": "15,16,17,18,19",
+      "times": 126
+    },
+    {
+      "sequency": "20,21,22,23,24",
+      "times": 122
+    },
+    {
+      "sequency": "5,6,7,8,9",
+      "times": 117
+    },
+    {
+      "sequency": "4,5,6,7,8",
+      "times": 116
+    },
+    {
+      "sequency": "14,15,16,17,18",
+      "times": 112
+    },
+    {
+      "sequency": "9,10,11,12,13,14",
+      "times": 84
+    },
+    {
+      "sequency": "8,9,10,11,12,13",
+      "times": 78
+    },
+    {
+      "sequency": "7,8,9,10,11,12",
+      "times": 74
+    },
+    {
+      "sequency": "1,2,3,4,5,6",
+      "times": 69
+    },
+    {
+      "sequency": "10,11,12,13,14,15",
+      "times": 68
+    },
+    {
+      "sequency": "16,17,18,19,20,21",
+      "times": 67
+    },
+    {
+      "sequency": "3,4,5,6,7,8",
+      "times": 66
+    },
+    {
+      "sequency": "11,12,13,14,15,16",
+      "times": 66
+    },
+    {
+      "sequency": "13,14,15,16,17,18",
+      "times": 65
+    },
+    {
+      "sequency": "20,21,22,23,24,25",
+      "times": 65
+    },
+    {
+      "sequency": "15,16,17,18,19,20",
+      "times": 63
+    },
+    {
+      "sequency": "5,6,7,8,9,10",
+      "times": 62
+    },
+    {
+      "sequency": "18,19,20,21,22,23",
+      "times": 61
+    },
+    {
+      "sequency": "6,7,8,9,10,11",
+      "times": 60
+    },
+    {
+      "sequency": "17,18,19,20,21,22",
+      "times": 60
+    },
+    {
+      "sequency": "14,15,16,17,18,19",
+      "times": 59
+    },
+    {
+      "sequency": "12,13,14,15,16,17",
+      "times": 59
+    },
+    {
+      "sequency": "2,3,4,5,6,7",
+      "times": 58
+    },
+    {
+      "sequency": "4,5,6,7,8,9",
+      "times": 57
+    },
+    {
+      "sequency": "19,20,21,22,23,24",
+      "times": 55
+    },
+    {
+      "sequency": "9,10,11,12,13,14,15",
+      "times": 40
+    },
+    {
+      "sequency": "8,9,10,11,12,13,14",
+      "times": 39
+    },
+    {
+      "sequency": "6,7,8,9,10,11,12",
+      "times": 36
+    },
+    {
+      "sequency": "3,4,5,6,7,8,9",
+      "times": 35
+    },
+    {
+      "sequency": "15,16,17,18,19,20,21",
+      "times": 32
+    },
+    {
+      "sequency": "10,11,12,13,14,15,16",
+      "times": 32
+    },
+    {
+      "sequency": "13,14,15,16,17,18,19",
+      "times": 31
+    },
+    {
+      "sequency": "7,8,9,10,11,12,13",
+      "times": 31
+    },
+    {
+      "sequency": "2,3,4,5,6,7,8",
+      "times": 30
+    },
+    {
+      "sequency": "12,13,14,15,16,17,18",
+      "times": 30
+    },
+    {
+      "sequency": "14,15,16,17,18,19,20",
+      "times": 29
+    },
+    {
+      "sequency": "19,20,21,22,23,24,25",
+      "times": 28
+    },
+    {
+      "sequency": "11,12,13,14,15,16,17",
+      "times": 27
+    },
+    {
+      "sequency": "16,17,18,19,20,21,22",
+      "times": 26
+    },
+    {
+      "sequency": "17,18,19,20,21,22,23",
+      "times": 26
+    },
+    {
+      "sequency": "5,6,7,8,9,10,11",
+      "times": 25
+    },
+    {
+      "sequency": "1,2,3,4,5,6,7",
+      "times": 25
+    },
+    {
+      "sequency": "4,5,6,7,8,9,10",
+      "times": 24
+    },
+    {
+      "sequency": "18,19,20,21,22,23,24",
+      "times": 22
+    },
+    {
+      "sequency": "8,9,10,11,12,13,14,15",
+      "times": 20
+    },
+    {
+      "sequency": "9,10,11,12,13,14,15,16",
+      "times": 18
+    },
+    {
+      "sequency": "12,13,14,15,16,17,18,19",
+      "times": 18
+    },
+    {
+      "sequency": "6,7,8,9,10,11,12,13",
+      "times": 17
+    },
+    {
+      "sequency": "13,14,15,16,17,18,19,20",
+      "times": 16
+    },
+    {
+      "sequency": "5,6,7,8,9,10,11,12",
+      "times": 15
+    },
+    {
+      "sequency": "2,3,4,5,6,7,8,9",
+      "times": 15
+    },
+    {
+      "sequency": "11,12,13,14,15,16,17,18",
+      "times": 14
+    },
+    {
+      "sequency": "10,11,12,13,14,15,16,17",
+      "times": 14
+    },
+    {
+      "sequency": "15,16,17,18,19,20,21,22",
+      "times": 13
+    },
+    {
+      "sequency": "14,15,16,17,18,19,20,21",
+      "times": 13
+    },
+    {
+      "sequency": "7,8,9,10,11,12,13,14",
+      "times": 13
+    },
+    {
+      "sequency": "12,13,14,15,16,17,18,19,20",
+      "times": 11
+    },
+    {
+      "sequency": "3,4,5,6,7,8,9,10",
+      "times": 11
+    },
+    {
+      "sequency": "18,19,20,21,22,23,24,25",
+      "times": 10
+    },
+    {
+      "sequency": "9,10,11,12,13,14,15,16,17",
+      "times": 9
+    },
+    {
+      "sequency": "16,17,18,19,20,21,22,23",
+      "times": 9
+    },
+    {
+      "sequency": "4,5,6,7,8,9,10,11",
+      "times": 9
+    },
+    {
+      "sequency": "1,2,3,4,5,6,7,8",
+      "times": 9
+    },
+    {
+      "sequency": "11,12,13,14,15,16,17,18,19",
+      "times": 9
+    },
+    {
+      "sequency": "8,9,10,11,12,13,14,15,16",
+      "times": 9
+    },
+    {
+      "sequency": "17,18,19,20,21,22,23,24",
+      "times": 9
+    },
+    {
+      "sequency": "13,14,15,16,17,18,19,20,21",
+      "times": 6
+    },
+    {
+      "sequency": "11,12,13,14,15,16,17,18,19,20",
+      "times": 6
+    },
+    {
+      "sequency": "5,6,7,8,9,10,11,12,13",
+      "times": 6
+    },
+    {
+      "sequency": "15,16,17,18,19,20,21,22,23",
+      "times": 6
+    },
+    {
+      "sequency": "6,7,8,9,10,11,12,13,14",
+      "times": 6
+    },
+    {
+      "sequency": "7,8,9,10,11,12,13,14,15",
+      "times": 6
+    },
+    {
+      "sequency": "1,2,3,4,5,6,7,8,9",
+      "times": 6
+    },
+    {
+      "sequency": "4,5,6,7,8,9,10,11,12",
+      "times": 5
+    },
+    {
+      "sequency": "8,9,10,11,12,13,14,15,16,17",
+      "times": 5
+    },
+    {
+      "sequency": "12,13,14,15,16,17,18,19,20,21",
+      "times": 5
+    },
+    {
+      "sequency": "2,3,4,5,6,7,8,9,10",
+      "times": 5
+    },
+    {
+      "sequency": "14,15,16,17,18,19,20,21,22",
+      "times": 4
+    },
+    {
+      "sequency": "9,10,11,12,13,14,15,16,17,18",
+      "times": 4
+    },
+    {
+      "sequency": "10,11,12,13,14,15,16,17,18,19",
+      "times": 4
+    },
+    {
+      "sequency": "3,4,5,6,7,8,9,10,11",
+      "times": 4
+    },
+    {
+      "sequency": "10,11,12,13,14,15,16,17,18,19,20",
+      "times": 3
+    },
+    {
+      "sequency": "6,7,8,9,10,11,12,13,14,15",
+      "times": 3
+    },
+    {
+      "sequency": "17,18,19,20,21,22,23,24,25",
+      "times": 3
+    },
+    {
+      "sequency": "5,6,7,8,9,10,11,12,13,14",
+      "times": 3
+    },
+    {
+      "sequency": "4,5,6,7,8,9,10,11,12,13",
+      "times": 2
+    },
+    {
+      "sequency": "3,4,5,6,7,8,9,10,11,12",
+      "times": 2
+    },
+    {
+      "sequency": "14,15,16,17,18,19,20,21,22,23",
+      "times": 2
+    },
+    {
+      "sequency": "7,8,9,10,11,12,13,14,15,16",
+      "times": 2
+    },
+    {
+      "sequency": "9,10,11,12,13,14,15,16,17,18,19,20",
+      "times": 2
+    },
+    {
+      "sequency": "1,2,3,4,5,6,7,8,9,10",
+      "times": 1
+    },
+    {
+      "sequency": "8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+      "times": 1
+    },
+    {
+      "sequency": "5,6,7,8,9,10,11,12,13,14,15",
+      "times": 1
+    },
+    {
+      "sequency": "6,7,8,9,10,11,12,13,14,15,16,17",
+      "times": 1
+    },
+    {
+      "sequency": "12,13,14,15,16,17,18,19,20,21,22",
+      "times": 1
+    },
+    {
+      "sequency": "16,17,18,19,20,21,22,23,24,25",
+      "times": 1
+    },
+    {
+      "sequency": "4,5,6,7,8,9,10,11,12,13,14",
+      "times": 1
+    },
+    {
+      "sequency": "2,3,4,5,6,7,8,9,10,11",
+      "times": 1
+    },
+    {
+      "sequency": "15,16,17,18,19,20,21,22,23,24",
+      "times": 1
+    }
+  ],
+  "numericalSet": {
+    "even:9-odds:6": 526,
+    "even:8-odds:7": 783,
+    "even:7-odds:8": 638,
+    "even:10-odds:5": 176,
+    "even:6-odds:9": 280,
+    "even:4-odds:11": 9,
+    "even:5-odds:10": 68,
+    "even:11-odds:4": 26,
+    "even:12-odds:3": 3
+  },
+  "sums": [
+    {
+      "valor": 192,
+      "quantidade": 69
+    },
+    {
+      "valor": 196,
+      "quantidade": 66
+    },
+    {
+      "valor": 199,
+      "quantidade": 65
+    },
+    {
+      "valor": 212,
+      "quantidade": 62
+    },
+    {
+      "valor": 195,
+      "quantidade": 60
+    },
+    {
+      "valor": 184,
+      "quantidade": 60
+    },
+    {
+      "valor": 201,
+      "quantidade": 56
+    },
+    {
+      "valor": 183,
+      "quantidade": 56
+    },
+    {
+      "valor": 203,
+      "quantidade": 55
+    },
+    {
+      "valor": 193,
+      "quantidade": 55
+    },
+    {
+      "valor": 187,
+      "quantidade": 55
+    },
+    {
+      "valor": 189,
+      "quantidade": 53
+    },
+    {
+      "valor": 198,
+      "quantidade": 52
+    },
+    {
+      "valor": 190,
+      "quantidade": 51
+    },
+    {
+      "valor": 188,
+      "quantidade": 51
+    },
+    {
+      "valor": 186,
+      "quantidade": 51
+    },
+    {
+      "valor": 191,
+      "quantidade": 50
+    },
+    {
+      "valor": 208,
+      "quantidade": 48
+    },
+    {
+      "valor": 197,
+      "quantidade": 48
+    },
+    {
+      "valor": 185,
+      "quantidade": 48
+    },
+    {
+      "valor": 209,
+      "quantidade": 43
+    },
+    {
+      "valor": 181,
+      "quantidade": 43
+    },
+    {
+      "valor": 207,
+      "quantidade": 41
+    },
+    {
+      "valor": 204,
+      "quantidade": 41
+    },
+    {
+      "valor": 202,
+      "quantidade": 41
+    },
+    {
+      "valor": 182,
+      "quantidade": 41
+    },
+    {
+      "valor": 194,
+      "quantidade": 40
+    },
+    {
+      "valor": 206,
+      "quantidade": 39
+    },
+    {
+      "valor": 213,
+      "quantidade": 36
+    },
+    {
+      "valor": 205,
+      "quantidade": 36
+    },
+    {
+      "valor": 179,
+      "quantidade": 36
+    },
+    {
+      "valor": 216,
+      "quantidade": 34
+    },
+    {
+      "valor": 215,
+      "quantidade": 34
+    },
+    {
+      "valor": 200,
+      "quantidade": 34
+    },
+    {
+      "valor": 175,
+      "quantidade": 34
+    },
+    {
+      "valor": 214,
+      "quantidade": 33
+    },
+    {
+      "valor": 180,
+      "quantidade": 33
+    },
+    {
+      "valor": 218,
+      "quantidade": 32
+    },
+    {
+      "valor": 217,
+      "quantidade": 32
+    },
+    {
+      "valor": 178,
+      "quantidade": 32
+    },
+    {
+      "valor": 177,
+      "quantidade": 32
+    },
+    {
+      "valor": 211,
+      "quantidade": 30
+    },
+    {
+      "valor": 173,
+      "quantidade": 30
+    },
+    {
+      "valor": 172,
+      "quantidade": 30
+    },
+    {
+      "valor": 220,
+      "quantidade": 29
+    },
+    {
+      "valor": 210,
+      "quantidade": 29
+    },
+    {
+      "valor": 219,
+      "quantidade": 26
+    },
+    {
+      "valor": 176,
+      "quantidade": 24
+    },
+    {
+      "valor": 174,
+      "quantidade": 23
+    },
+    {
+      "valor": 222,
+      "quantidade": 21
+    },
+    {
+      "valor": 170,
+      "quantidade": 21
+    },
+    {
+      "valor": 166,
+      "quantidade": 21
+    },
+    {
+      "valor": 221,
+      "quantidade": 20
+    },
+    {
+      "valor": 171,
+      "quantidade": 18
+    },
+    {
+      "valor": 227,
+      "quantidade": 16
+    },
+    {
+      "valor": 226,
+      "quantidade": 16
+    },
+    {
+      "valor": 224,
+      "quantidade": 16
+    },
+    {
+      "valor": 169,
+      "quantidade": 16
+    },
+    {
+      "valor": 168,
+      "quantidade": 16
+    },
+    {
+      "valor": 167,
+      "quantidade": 16
+    },
+    {
+      "valor": 225,
+      "quantidade": 14
+    },
+    {
+      "valor": 223,
+      "quantidade": 13
+    },
+    {
+      "valor": 230,
+      "quantidade": 12
+    },
+    {
+      "valor": 164,
+      "quantidade": 12
+    },
+    {
+      "valor": 162,
+      "quantidade": 12
+    },
+    {
+      "valor": 228,
+      "quantidade": 11
+    },
+    {
+      "valor": 165,
+      "quantidade": 11
+    },
+    {
+      "valor": 161,
+      "quantidade": 11
+    },
+    {
+      "valor": 163,
+      "quantidade": 8
+    },
+    {
+      "valor": 233,
+      "quantidade": 7
+    },
+    {
+      "valor": 158,
+      "quantidade": 7
+    },
+    {
+      "valor": 235,
+      "quantidade": 6
+    },
+    {
+      "valor": 234,
+      "quantidade": 6
+    },
+    {
+      "valor": 159,
+      "quantidade": 6
+    },
+    {
+      "valor": 157,
+      "quantidade": 6
+    },
+    {
+      "valor": 156,
+      "quantidade": 6
+    },
+    {
+      "valor": 232,
+      "quantidade": 5
+    },
+    {
+      "valor": 231,
+      "quantidade": 5
+    },
+    {
+      "valor": 229,
+      "quantidade": 5
+    },
+    {
+      "valor": 155,
+      "quantidade": 5
+    },
+    {
+      "valor": 153,
+      "quantidade": 5
+    },
+    {
+      "valor": 236,
+      "quantidade": 4
+    },
+    {
+      "valor": 150,
+      "quantidade": 4
+    },
+    {
+      "valor": 240,
+      "quantidade": 3
+    },
+    {
+      "valor": 160,
+      "quantidade": 3
+    },
+    {
+      "valor": 154,
+      "quantidade": 3
+    },
+    {
+      "valor": 245,
+      "quantidade": 2
+    },
+    {
+      "valor": 241,
+      "quantidade": 2
+    },
+    {
+      "valor": 237,
+      "quantidade": 2
+    },
+    {
+      "valor": 151,
+      "quantidade": 2
+    },
+    {
+      "valor": 148,
+      "quantidade": 2
+    },
+    {
+      "valor": 141,
+      "quantidade": 2
+    },
+    {
+      "valor": 249,
+      "quantidade": 1
+    },
+    {
+      "valor": 247,
+      "quantidade": 1
+    },
+    {
+      "valor": 243,
+      "quantidade": 1
+    },
+    {
+      "valor": 242,
+      "quantidade": 1
+    },
+    {
+      "valor": 239,
+      "quantidade": 1
+    },
+    {
+      "valor": 238,
+      "quantidade": 1
+    },
+    {
+      "valor": 152,
+      "quantidade": 1
+    },
+    {
+      "valor": 147,
+      "quantidade": 1
+    },
+    {
+      "valor": 146,
+      "quantidade": 1
+    },
+    {
+      "valor": 144,
+      "quantidade": 1
+    },
+    {
+      "valor": 133,
+      "quantidade": 1
+    }
+  ]
+}

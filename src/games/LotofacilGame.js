@@ -1,5 +1,7 @@
 const AbstractGame = require('./AbstractGame');
 const SequencyExtractor = require('../extractors/SequencyExtractor');
+const NumericalSetExtractor = require('../extractors/NumericalSetExtractor');
+const NumbersSumExtractor = require('../extractors/NumbersSumExtractor');
 
 /**
  * @class
@@ -16,6 +18,40 @@ class LotofacilGame extends AbstractGame {
     this.rules.sequencyMaxSize = 5;
     this.rules.requiredSequencies = [];
     this.rules.requiredNumbers = [];
+    this.rules.maxEven = 9;
+    this.rules.maxOdds = 8;
+    this.rules.sumRange = [180, 210];
+  }
+
+  /**
+   * Verifica a quantidade maxima de pares e impares
+   * @param {Array} bet Jogo
+   * @param {Number} maxEven Maximo de numeros pares
+   * @param {Numver} maxOdds Maximo de numeros impares
+   * @returns Boolean
+   */
+  isOnMaxEvenAndOdds(bet, maxEven, maxOdds) {
+    const numericalSetExtractor = new NumericalSetExtractor();
+    const res = numericalSetExtractor.setBet(bet).process().getResult();
+    if (res.even >= maxEven || res.odds >= maxOdds) {
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * Verifica se a soma dos numeros da aposta está dentro do range
+   * @param {Array} bet Jogo
+   * @param {Array} sumRange Range da soma dos numeros ex: [187, 201]
+   * @returns Boolean
+   */
+  isOnSumRange(bet, sumRange) {
+    const numbersSumExtractor = new NumbersSumExtractor();
+    const res = numbersSumExtractor.setBet(bet).process().getResult();
+    if (res < sumRange[0] || res > sumRange[1]) {
+      return false;
+    }
+    return true;
   }
 
   /**
@@ -35,7 +71,9 @@ class LotofacilGame extends AbstractGame {
         this.rules.requiredSequencies,
         this.rules.sequencyMaxSize
       ) &&
-      this.isRequiredNumberPresent(bet, this.rules.requiredNumbers)
+      this.isRequiredNumberPresent(bet, this.rules.requiredNumbers) &&
+      this.isOnMaxEvenAndOdds(bet, this.rules.maxEven, this.rules.maxOdds) &&
+      this.isOnSumRange(bet, this.rules.sumRange)
     ) {
       return true;
     }

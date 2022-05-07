@@ -41,4 +41,10 @@ describe('LotofacilAnalyzer', () => {
     ]);
     expect(res['even:8-odds:7']).toBe(1);
   });
+
+  it('Deve retornar a soma dos numeros da aposta', () => {
+    const an = new LotofacilAnalizer();
+    const res = an.getNumbersSum([[2, 3]]);
+    expect(res[0].quantidade).toBe(1);
+  });
 });

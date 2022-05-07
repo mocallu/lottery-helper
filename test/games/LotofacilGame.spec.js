@@ -31,6 +31,9 @@ describe('Lotofacil Game', () => {
 
   it('Deve gerar uma nova aposta aplicando as regras', () => {
     game.setRules({
+      maxEven: 9,
+      maxOdds: 8,
+      sumRange: [180, 210],
       sequencyMaxSize: 5,
       requiredNumbers: [20],
       requiredSequencies: [[1, 2, 3]],

@@ -1,6 +1,7 @@
 const AbstractAnalizer = require('./AbstractAnalyzer');
 const SequencyExtractor = require('../extractors/SequencyExtractor');
 const NumericalSetExtractor = require('../extractors/NumericalSetExtractor');
+const NumbersSumExtractor = require('../extractors/NumbersSumExtractor');
 
 /**
  * @class
@@ -70,6 +71,27 @@ class LotofacilAnalyzer extends AbstractAnalizer {
   }
 
   /**
+   * Retorna a soma dos números da aposta
+   * @param {Array} bets Array com array de apostas
+   * @returns Object
+   */
+  getNumbersSum(bets) {
+    const numbersSumExtractor = new NumbersSumExtractor();
+    const ret = {};
+    bets.forEach((bet) => {
+      const res = numbersSumExtractor.setBet(bet).process().getResult();
+      const val = ret[res] || 0;
+      ret[res] = val + 1;
+    });
+    const res = Object.keys(ret).map((key) => ({
+      valor: Number(key),
+      quantidade: ret[key],
+    }));
+    res.sort((a, b) => a.quantidade - b.quantidade).reverse();
+    return res;
+  }
+
+  /**
    * Retorna resumo
    * @param {Array} bets Array com apostas
    * @returns Object
@@ -80,6 +102,7 @@ class LotofacilAnalyzer extends AbstractAnalizer {
       winningNumbers: this.getWinningNumbers(bets),
       winningSequencies: this.getWinningSequencies(bets),
       numericalSet: this.getNumericalSet(bets),
+      sums: this.getNumbersSum(bets),
     };
   }
 }

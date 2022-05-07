@@ -3,32 +3,35 @@ const fs = require('fs');
 const LotofacilGame = require('./src/games/LotofacilGame');
 const LotofacilAnalyzer = require('./src/analyzers/LotofacilAnalyzer');
 const lotofacilBets = require('./data/lotofacil-bets.json');
-// const lotofacilResume = require('./data/lotofacil-resume.json');
+const lotofacilResume = require('./data/lotofacil-resume.json');
 
 // const download = new Download('./data');
 // download.all('lotofacil');
 
-// const game = new LotofacilGame();
-// game.setBlackList(lotofacilBets);
+const game = new LotofacilGame();
+game.setBlackList(lotofacilBets);
 
-// const betRules = {
-//   sequencyMaxSize: 6,
-//   requiredNumbers: [],
-//   requiredSequencies: lotofacilResume.winningSequencies
-//     .map((i) => {
-//       if (i.times < 100) {
-//         return false;
-//       }
-//       return i.sequency.split(',').map((n) => parseInt(n));
-//     })
-//     .filter((i) => i),
-// };
-// game.setRules(betRules);
+const betRules = {
+  sequencyMaxSize: 5,
+  maxEven: 9,
+  maxOdds: 8,
+  sumRange: [180, 210],
+  requiredNumbers: [],
+  requiredSequencies: lotofacilResume.winningSequencies
+    .map((i) => {
+      if (i.times < 100) {
+        return false;
+      }
+      return i.sequency.split(',').map((n) => parseInt(n));
+    })
+    .filter((i) => i),
+};
+game.setRules(betRules);
 
-// Array.from(Array(1)).forEach(() => {
-//   const bet = game.createBet();
-//   console.log(bet);
-// });
+Array.from(Array(1)).forEach(() => {
+  const res = game.createBet();
+  console.log(res);
+});
 
 // let good = false;
 // let trys = 1;
@@ -53,15 +56,15 @@ const lotofacilBets = require('./data/lotofacil-bets.json');
 //   trys += 1;
 // }
 
-const bets = lotofacilBets.map((bet) => {
-  return bet.split(',').map((n) => parseInt(n));
-});
-const lotofacilAnalyzer = new LotofacilAnalyzer();
-const resume = lotofacilAnalyzer.getResume(bets);
+// const bets = lotofacilBets.map((bet) => {
+//   return bet.split(',').map((n) => parseInt(n));
+// });
+// const lotofacilAnalyzer = new LotofacilAnalyzer();
+// const resume = lotofacilAnalyzer.getResume(bets);
 
-fs.writeFile(
-  `./data/lotofacil-resume.json`,
-  JSON.stringify(resume),
-  'utf8',
-  () => {}
-);
+// fs.writeFile(
+//   `./data/lotofacil-resume.json`,
+//   JSON.stringify(resume),
+//   'utf8',
+//   () => {}
+// );
